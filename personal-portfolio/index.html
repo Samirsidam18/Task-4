@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samir Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">SS.</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <p class="tag">IT STUDENT</p>
+
+    <h1>Samir <br> Sidam</h1>
+
+    <h3>Web Developer & Problem Solver</h3>
+
+    <p class="desc">
+      Building elegant, responsive web applications with clean code and modern technologies.
+      Passionate about creating seamless user experiences and continuously learning new skills.
+    </p>
+
+    <div class="buttons">
+      <button class="gold" onclick="scrollToSection('projects')">VIEW WORK</button>
+      <button class="outline" onclick="scrollToSection('contact')">GET IN TOUCH</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        Hello, I am Samir Sidam, a passionate Computer Science student with a strong interest in web development and software engineering. I have a solid foundation in HTML, CSS, JavaScript, and Core Java, and I have built multiple mini projects to strengthen my practical knowledge.
+Currently. I am learning React to enhance my frontend development skills and build dynamic, responsive web applications. I enjoy solving problems, exploring new technologies, and continuously improving my coding abilities.
+      </p>
+
+      <p>
+        Currently, I am learning <span>React</span> to enhance my frontend skills and build modern web applications.
+      </p>
+    </div>
+
+    <div class="skills">
+      <div class="skill-box">HTML & CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">Core Java</div>
+      <div class="skill-box">Responsive Design</div>
+      <div class="skill-box">Web Development</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+  <h2>Featured Projects</h2>
+
+  <p class="project-desc">
+    A curated selection of projects demonstrating my web development
+    skills and commitment to clean, functional code.
+  </p>
+
+  <!-- PROJECT 1 -->
+  <div class="project-card">
+
+    <div class="project-left">
+      <h1>01</h1>
+      <p>PORTFOLIO</p>
+    </div>
+
+    <div class="project-right">
+      <h3>Personal Portfolio Website</h3>
+
+      <p>
+        A personal portfolio website showcasing my skills, projects, and
+        professional journey with modern design principles.
+      </p>
+
+      <ul>
+        <li>Fully responsive design</li>
+        <li>Clean UI with modern layout</li>
+        <li>Smooth scrolling navigation</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-card">
+
+    <div class="project-left">
+      <h1>02</h1>
+      <p>INTERACTIVE APP</p>
+    </div>
+
+    <div class="project-right">
+      <h3>Task Management System</h3>
+
+      <p>
+        A simple and interactive task management application built using
+        JavaScript with focus on DOM manipulation and user experience.
+      </p>
+
+      <ul>
+        <li>Add and delete tasks dynamically</li>
+        <li>DOM manipulation and event handling</li>
+        <li>Clean and user-friendly interface</li>
+        <li>Improved logical thinking and state management</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="contact-container">
+
+    <div class="left">
+      <h2>Get in Touch</h2>
+
+      <p>Interested in working together? Feel free to reach out.</p>
+
+      <p><b>Email:</b>samirsidam7770@gmail.com</p>
+      <p><b>LinkedIn:</b> linkedin.com/in/samirsidam</p>
+    </div>
+
+    <div class="right">
+      <form onsubmit="send(); return false;">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="msg"></p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
