@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Product Store</h1>
+  <p class="subtitle">Discover amazing products at great prices</p>
+
+  <!-- Top Bar -->
+  <div class="navbar">
+  <div class="logo">🛍️ ShopX</div>
+
+  <div class="nav-right">
+    <input type="text" id="search" placeholder="🔍 Search products...">
+
+    <select id="sort">
+      <option value="default">Sort</option>
+      <option value="low">Price: Low → High</option>
+      <option value="high">Price: High → Low</option>
+      <option value="rating">Top Rated</option>
+    </select>
+
+    <div class="cart">🛒 <span id="cartCount">0</span></div>
+  </div>
+</div>
+
+  <div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Category</h3>
+<select id="category">
+  <option value="All">All</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Accessories">Accessories</option>
+  <option value="Home">Home</option>
+  <option value="Sports">Sports</option>
+</select>
+      <h3>Max Price</h3>
+      <input type="range" id="price" min="0" max="10000" value="10000">
+      <p id="priceValue">₹10000</p>
+    </div>
+
+    <!-- Products -->
+    <div class="products" id="products"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
